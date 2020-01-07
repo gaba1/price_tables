@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+.navbar {
+  letter-spacing: 5px;
+  width: 100%;
+  background-color: #ecf0f1;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.navbar>div {
+  margin: auto 0;
+}
+
+.logo {
+  height: 100px;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #7f8c8d;
+  display: inline-block;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 5px;
+  transition: all .2s ease;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #2c3e50;
+}
+
+.current {
+  color: #2c3e50;
+  cursor: default;
+}
+
+.home {
+  display: flex;
+  height: 70vh;
+  width: 100vw;
+  justify-content: center;
+}
+
+.home>h1 {
+  margin: auto;
+}
+
+.prices {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+}
+
+.prices>h1 {
+  transform: translate(0, -50%);
+  margin: auto;
+}
+
+.container {
+  margin: auto;
+  background: #7f8c8d;
+  padding: 2rem;
+}
+
+.price-table {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+  padding: 3rem;
+  text-align: center;
+}
+
+.price-table>div {
+  border-radius: 15px;
+  background-color: white;
+  line-height: 2.5rem;
+  transition: all 0.2s ease;
+  opacity: 0.8;
+}
+
+.price-table>div>h2 {
+  margin: 2rem;
+}
+
+.price-table>div:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+h1 {
+  padding: 2rem;
+  font-size: 2.5rem;
+}
+
+span {
+  padding-right: .3rem;
+  font-size: 1.5rem;
+}
+
+.price-table>div>ul {
+  padding: 1rem;
+  display: inline;
+}
+
+.basic>h1 {
+  background: #fc4a1a;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f7b733, #fc4a1a);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.pro>h1 {
+  background: #00F260;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0575E6, #00F260);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0575E6, #00F260);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.business>h1 {
+  background: #CAC531;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F3F9A7, #CAC531);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F3F9A7, #CAC531);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.btn {
+  outline: none;
+  color: #ecf0f1;
+  display: inline-block;
+  padding: 0 2rem;
+  border-radius: 5px;
+  margin: 2rem;
+  background: #2c3e50;
+  border: none;
+}
+
+@media screen and (max-width: 1280px) {
+  .price-table {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5rem;
+  }
+
+  .price-table>div {
+    margin: auto;
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .price-table {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5rem;
+  }
+
+  .price-table>div {
+    margin: auto;
+    min-width: 300px;
+    max-width: 70%;
+  }
+}
+
+.contact-form {
+  margin: 3rem auto;
+  width: 70%;
+  border-radius: 10px;
+  background: #ecf0f1;
+}
+
+.contact-form>form {
+  width: 100%;
+  padding: 2rem;
+}
+
+.contact-form>form>label,
+.contact-form>form>input,
+.contact-form>form>textarea {
+  margin: auto;
+  display: block;
+  width: 80%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-form>form>input,
+.contact-form>form>textarea {
+  margin-bottom: 1rem;
+}
+
+label {
+  margin-top: 1rem;
+  padding: 1rem 0;
+}
+
+input,
+textarea {
+  height: 30px;
+  padding: 0.5rem;
+}
+
+#submit {
+  margin-top: 2rem;
+  padding: 1rem;
+  height: 100%;
+  width: 80%;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
