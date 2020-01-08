@@ -199,13 +199,27 @@ span {
 
 .contact-form>form>label,
 .contact-form>form>input,
-.contact-form>form>textarea {
+.contact-form>form>textarea,
+.contact-form>form>div {
   margin: auto;
   display: block;
   width: 80%;
   outline: none;
   border: none;
   border-radius: 5px;
+}
+
+.alert {
+  color: #ecf0f1;
+  padding: .5rem;
+}
+
+.error {
+  background-color: red;
+}
+
+.success {
+  background-color: green;
 }
 
 .contact-form>form>input,
